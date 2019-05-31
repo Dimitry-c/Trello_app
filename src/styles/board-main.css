@@ -1,0 +1,13 @@
+.board-main-btn {
+    background: rgb(255, 140, 39);
+    max-width: 250px;
+    width: 250px;
+    margin: 10px 0;
+    font-size:1.2rem;
+}
+
+@media only screen and (min-width: 960px) {
+    .board-main-btn {
+        margin: 0 20px 20px 20px;
+    }
+}

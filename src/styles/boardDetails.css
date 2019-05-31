@@ -1,0 +1,13 @@
+.board-name{
+    background: rgb(255, 140, 39);
+    padding: 20px 90px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    box-shadow: silver 1px 0px 9px 2px;
+    transition: transform 0.2s ease-in-out;
+    margin-left:50px;
+    border-radius: 5px;
+    font-size:1.4rem;
+}

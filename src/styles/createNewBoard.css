@@ -1,0 +1,135 @@
+.flex,
+.main-btns-flex {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 50px; */
+    align-items: flex-start;
+    align-items: center;
+}
+
+.form,
+.btn {
+    background: #5954D5;
+    padding: 15px 30px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    box-shadow: silver 1px 0px 9px 2px;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 5px;
+    border: none;
+    width: 270px;
+    min-width: 270px;
+    box-sizing: border-box;
+}
+
+.add-board-btn {
+    font-size:1.2rem;
+    background: #5954D5;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    width: 270px;
+    min-width: 270px;
+    padding: 20px 6px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.form {
+    cursor: auto;
+}
+
+.form-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.form-bottom {
+    padding-top: 10px;
+}
+
+.form-bottom input[type="text"] {
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 100%;
+    text-indent: 10px;
+    padding: 10px 0px;
+}
+
+.form-btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.form-btns a,
+.form-btns input {
+    display: block;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+}
+
+.form-btns .cancel {
+    background: #f25151;
+    color: white;
+}
+
+.form-btns .submit {
+    background: #38ab34;
+    color: white;
+}
+
+.form-top .txt {
+    flex: 1;
+}
+
+.x {
+    width: 25px;
+    height: 25px;
+    background: white;
+    color: #3B5998;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {
+    .main-btns-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .flex {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .board-main-btn {
+        margin: 0 20px 20px 20px;
+    }
+    .main-btns-flex {
+        justify-content: flex-start;
+    }
+    .form,
+    .add-board-btn {
+        margin-left: 50px;
+    }
+    .btn:hover,
+    .form:hover,
+    .add-board-btn:hover {
+        transform: scale(1.1);
+    }
+}

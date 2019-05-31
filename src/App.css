@@ -1,0 +1,139 @@
+
+
+.top{
+display: flex;
+justify-content: center;
+padding:30px 0;
+}
+
+.top img{
+  border-radius: 50%;
+  box-shadow: silver 1px 0px 9px 2px;
+  transition: transform 0.2s ease-in-out;
+  width:65px;
+  height:65px;
+}
+
+.top img:hover{
+  transform: scale(1.1) rotate(-10deg);
+}
+
+  
+.board-bottom{
+  padding:50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.add-list-btn{
+  color:white;
+  background: #5490D5;
+  box-shadow:silver 1px 0px 9px 2px;
+  padding:20px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width:120px;
+  font-size:1.3rem;
+  border:none;
+}
+
+
+
+.board-list-ctr{
+padding:20px;
+position: relative;
+background:white;
+box-shadow: silver 1px 0px 9px 2px;
+max-width: 250px;
+border-radius: 5px;
+}
+
+.board-x{
+  position: absolute;
+  border-radius: 50%;
+  width:25px;
+  height:25px;
+  color:red;
+  border:1px solid red;
+  left:-10px;
+  top:-10px;
+  text-align: center;
+  transition:transform 0.2s ease-in-out;
+  background:white;
+  cursor: pointer;
+}
+
+.board-x:hover{
+  transform: scale(1.1);
+}
+
+
+.board-list-ctr input[type="text"] ,.board-list-items-ctr input[type="text"]{
+  margin: 20px auto;
+  border-radius: 5px;
+  width: 100%;
+  text-indent: 10px;
+  padding: 10px 0px;
+}
+
+.board-list-ctr .txt{
+  text-align: center;
+  font-size:0.8rem;
+}
+
+
+.board-list-items-ctr{
+  background:#5954D5;
+  color:white;
+  width:250px;
+  display: inline-block;
+  padding:15px;
+  margin-right:20px;
+  margin-bottom:20px;
+  border-radius: 5px;
+}
+
+.board-list-items-ctr h3{
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.board-list-items-ctr .title{
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  font-size:1.3rem;
+}
+
+.list-items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding:0;
+}
+.list-items li{
+  width:100%;
+}
+.item{    
+  background: #9954D5;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: white;
+  border:none;
+}
+
+.item.checked{
+  text-decoration: line-through;
+}
